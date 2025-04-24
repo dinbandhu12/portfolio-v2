@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/pagetransition.css" />
+    <link rel="stylesheet" href="/css/navigationbar.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <script src="/js/pageTransition.js"></script>
+    <title>Contact | DBS World Portfolio</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <a href="/" data-transition="true"
+        >Home
+        <img
+          src="/assets/icons/r-arrow-black-v2.svg"
+          alt="right-icon"
+          class="r-icon"
+      /></a>
+      <a href="/pages/about.html" data-transition="true"
+        >About
+        <img
+          src="/assets/icons/r-arrow-black-v2.svg"
+          alt="right-icon"
+          class="r-icon"
+      /></a>
+      <a href="/pages/services.html" data-transition="true"
+        >Services
+        <img
+          src="/assets/icons/r-arrow-black-v2.svg"
+          alt="right-icon"
+          class="r-icon"
+      /></a>
+      <a href="/pages/work.html" data-transition="true"
+        >My Work
+        <img
+          src="/assets/icons/r-arrow-black-v2.svg"
+          alt="right-icon"
+          class="r-icon"
+      /></a>
+      <a href="#"
+        >Blog
+        <img
+          src="/assets/icons/r-arrow-black-v2.svg"
+          alt="right-icon"
+          class="r-icon"
+      /></a>
+    </nav>
+
+    <section class="contact-section">
+      <div class="contact-blocks">
+        <div class="contact-left-block">
+          <div class="contact-left-block-content">
+            <div class="toggle-container">
+              <a href="#" class="toggle-btn">
+                Dark Mode
+                <span class="box"></span>
+              </a>
+              <button
+                id="toggle-menu-btn"
+                class="toggle-menu-btn"
+                aria-label="Toggle Menu"
+              >
+                <img src="/assets/icons/menu-icon.svg" alt="Menu Icon" />
+              </button>
+            </div>
+            <h1 class="getintouch-text">Get in touch</h1>
+            <p class="left-para-1">
+              It's great to have you here — let's create something meaningful
+              together.
+            </p>
+            <div class="mid-para">
+              <p class="left-para-2">
+                Have a project in mind, a question to ask, or just want to
+                connect? Whether you're looking for a designer, a developer, or
+                a full-stack partner. I'm here to help bring your vision to
+                life.
+              </p>
+              <p class="left-para-3">
+                Drop me a message - I'll get back to you as soon as possible.
+              </p>
+            </div>
+            <img src="/assets/imgs/contactimg.jpg" alt="" class="cnt-img" />
+          </div>
+        </div>
+        <div class="contact-middle-block"></div>
+
+        <div class="contact-right-block">
+          <div class="form-table">
+            <form action="" class="contact__form" id="contact-form">
+              <div class="form__group">
+                <label for="name">Your name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Please enter your name"
+                  required
+                />
+              </div>
+              <div class="form__group">
+                <label for="email">Your email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Please enter your email"
+                  required
+                />
+              </div>
+              <div class="form__group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="Please enter your subject"
+                  required
+                />
+              </div>
+              <div class="form__group">
+                <label for="message">Your message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Say Hi! OR Type your message here..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="form__button" id="sendButton">Launch Message
+                <img src="/assets/icons/send-mail.svg" alt="send-mail" class="send-icon">
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+     <!-- footer section -->
+     <footer class="privacy-section">
+      <div class="privacy-content">
+        <div class="left">
+          <span class="social-text">Social Media</span>
+        </div>
+        <div class="social-links">
+          <a href="https://www.instagram.com/" class="social-icon">
+            <img src="/assets/icons/instagram.svg" alt="instagram" />
+          </a>
+          <a href="https://www.linkedin.com/" class="social-icon">
+            <img src="/assets/icons/linkedin.svg" alt="linkedin" />
+          </a>
+          <a href="https://www.twitter.com/" class="social-icon">
+            <img src="/assets/icons/twitter-x.svg" alt="twitter" />
+          </a>
+          <a href="https://www.github.com/" class="social-icon">
+            <img src="/assets/icons/github.svg" alt="github" />
+          </a>
+          <a href="https://www.dbs-portfolio.com/" class="social-icon">
+            <img src="/assets/icons/link.svg" alt="link" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="rights">
+      <span class="right-text">© All Rights Reserved By DBS World.</span>
+    </div>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/navigationbar.js"></script>
+    <div class="transition-container" id="transitionContainer"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        new PageTransition();
+      });
+    </script>
+  </body>
+</html>

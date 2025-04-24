@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/pagetransition.css" />
+    <link rel="stylesheet" href="/css/navigationbar.css" />
+    <link rel="stylesheet" href="/css/services.css" />
+    <script src="/js/pageTransition.js"></script>
+    <title>Services | DBS World Portfolio</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <a href="/" data-transition="true"
+        >Home
+        <img
+          src="/assets/icons/r-arrow-black-v2.svg"
+          alt="right-icon"
+          class="r-icon"
+      /></a>
+      <a href="/pages/about.html" data-transition="true"
+        >About
+        <img
+          src="/assets/icons/r-arrow-black-v2.svg"
+          alt="right-icon"
+          class="r-icon"
+      /></a>
+      <a href="/pages/work.html" data-transition="true"
+        >My Work
+        <img
+          src="/assets/icons/r-arrow-black-v2.svg"
+          alt="right-icon"
+          class="r-icon"
+      /></a>
+      <a href="/pages/contact.html" data-transition="true"
+        >Contact
+        <img
+          src="/assets/icons/r-arrow-black-v2.svg"
+          alt="right-icon"
+          class="r-icon"
+      /></a>
+      <a href="#"
+        >Blog
+        <img
+          src="/assets/icons/r-arrow-black-v2.svg"
+          alt="right-icon"
+          class="r-icon"
+      /></a>
+    </nav>
+
+    <section class="services-section">
+      <div class="services-block">
+        <div class="services-block-1-content">
+          <div class="toggle-container">
+            <a href="#" class="toggle-btn">
+              Dark Mode
+              <span class="box"></span>
+            </a>
+            <button
+              id="toggle-menu-btn"
+              class="toggle-menu-btn"
+              aria-label="Toggle Menu"
+            >
+              <img src="/assets/icons/menu-icon.svg" alt="Menu Icon" />
+            </button>
+          </div>
+          <h1 class="services-bold-text">SERVICES</h1>
+        </div>
+      </div>
+
+      <!-- block 2 -->
+      <div class="services-block">
+        <div class="services-block-2-content">
+          <div class="services-block-2-content-text">
+            <h2 class="services-block-2-heading">UI/UX Design</h2>
+            <p class="services-block-2-para">
+              I design clean, intuitive interfaces focused on real user needs.
+              From wireframes to final visuals, every screen is purposeful and
+              experience led.
+            </p>
+          </div>
+          <img src="/assets/imgs/uiuxdesign.png" alt="" />
+        </div>
+      </div>
+
+      <!-- block 3 -->
+      <div class="services-block">
+        <div class="services-block-3-content">
+          <div class="services-block-3-content-text">
+            <h2 class="services-block-3-heading">
+              Web <br />
+              Development
+            </h2>
+            <p class="services-block-3-para">
+              I write modular, maintainable code for fast, responsive websites.
+              Whether it's React on the front or Node on the back performance
+              stays top priority.
+            </p>
+          </div>
+          <img src="/assets/imgs/webdevelopment.jpg" alt="" />
+        </div>
+      </div>
+      <!-- block 4 -->
+      <div class="services-block">
+        <div class="services-block-4-content">
+          <div class="services-block-4-content-text">
+            <h2 class="services-block-4-heading">Full-stack Solution</h2>
+            <p class="services-block-4-para">
+              From idea to deployment, I handle the full stack combining design
+              thinking, scalable architecture, and modern dev tools to bring
+              complete products to life.
+            </p>
+          </div>
+          <img src="/assets/imgs/fullstack.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="privacy-section">
+      <div class="privacy-content">
+        <div class="left">
+          <span class="social-text">Social Media</span>
+        </div>
+        <div class="social-links">
+          <a href="https://www.instagram.com/" class="social-icon">
+            <img src="/assets/icons/instagram.svg" alt="instagram" />
+          </a>
+          <a href="https://www.linkedin.com/" class="social-icon">
+            <img src="/assets/icons/linkedin.svg" alt="linkedin" />
+          </a>
+          <a href="https://www.twitter.com/" class="social-icon">
+            <img src="/assets/icons/twitter-x.svg" alt="twitter" />
+          </a>
+          <a href="https://www.github.com/" class="social-icon">
+            <img src="/assets/icons/github.svg" alt="github" />
+          </a>
+          <a href="https://www.dbs-portfolio.com/" class="social-icon">
+            <img src="/assets/icons/link.svg" alt="link" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="rights">
+      <span class="right-text">© All Rights Reserved By DBS World.</span>
+    </div>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/navigationbar.js"></script>
+    <div class="transition-container" id="transitionContainer"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        new PageTransition();
+      });
+    </script>
+  </body>
+</html>
