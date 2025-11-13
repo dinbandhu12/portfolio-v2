@@ -227,11 +227,11 @@ body.dark-mode .toggle-menu-btn img {
     margin-top: 64px;
   }
 
-  .toggle-container {
+  /* .toggle-container { */
     /* position: relative; */
     /* margin-bottom: 20px; */
     /* justify-content: flex-end; */
-  }
+  /* } */
 }
 
 /* Work section */
