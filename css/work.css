@@ -288,6 +288,7 @@ body.dark-mode .gap-right {
 @media (max-width: 480px) {
   .gap-block {
     flex-direction: column;
+    height: 16vh;
   }
   .gap-left {
     width: 100%;
@@ -479,7 +480,7 @@ body.dark-mode .work-right-block .project-info {
   }
   .gap-span {
     width: 100%;
-    height: 10vh;
+    height: 0;
   }
   .work-right-block {
     width: 100%;
@@ -494,6 +495,9 @@ body.dark-mode .work-right-block .project-info {
   }
   .project-num-text .project-num {
     font-size: 18px;
+  }
+  .project-num-text {
+    padding: 20px 10px;
   }
 }
 
