@@ -15,12 +15,12 @@
     --border-color: #2f2f2f;
 
     /* for dark mode */
-    --primary-color-dark: #D9D9D9;
+    --primary-color-dark: #E5E5E5;
     --secondary-color-dark: #BABABA;
     --tertiary-color-dark: #9D9D9D;
-    --background-color-dark: #121212;
+    --background-color-dark: #1a1a1a;
     --hover-text-color-dark: #2e2e2e;
-    --border-color-dark: #5b5b5b;
+    --border-color-dark: #404040;
 
     /* font family */
     --font-family-1: "Inter", sans-serif;
@@ -29,17 +29,23 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Offset for fixed navbar */
 }
+
 html, body {
     transition: scroll-behavior 0.3s ease;
+}
+
+/* Smooth scrolling for all scrollable containers */
+[data-scroll-container] {
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--background-color);
     font-family: var(--font-family-1);
     color: var(--primary-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
-    transition: padding-top 0.6s cubic-bezier(0.7, 0, 0.3, 1);
+    transition: background-color 0.3s ease, color 0.3s ease, padding-top 0.6s cubic-bezier(0.7, 0, 0.3, 1);
 }
 
 body.dark-mode {
@@ -218,7 +224,7 @@ body.dark-mode .contact-right-block {
     justify-content: center;
     width: 24px;
     height: 24px;
-    transition: transform var(--transition);
+    transition: transform 0.3s ease-in-out;
   }
   body.dark-mode .toggle-menu-btn {
     background-color: var(--background-color-dark);

@@ -100,14 +100,5 @@ class PageTransition {
     }
 }
 
-// Initialize on page load
-document.addEventListener('DOMContentLoaded', () => {
-    window.pageTransition = new PageTransition();
-});
-
-// Cleanup on page unload
-window.addEventListener('unload', () => {
-    if (window.pageTransition) {
-        window.pageTransition.cleanup();
-    }
-});
+// Note: PageTransition is initialized manually in each HTML file
+// This prevents double initialization

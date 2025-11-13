@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     /* for light mode */
     --primary-color: #090909;
@@ -14,12 +18,12 @@
     --border-color: #2f2f2f;
 
     /* for dark mode */
-    --primary-color-dark: #D9D9D9;
+    --primary-color-dark: #E5E5E5;
     --secondary-color-dark: #BABABA;
     --tertiary-color-dark: #9D9D9D;
-    --background-color-dark: #121212;
+    --background-color-dark: #1a1a1a;
     --hover-text-color-dark: #2e2e2e;
-    --border-color-dark: #5b5b5b;
+    --border-color-dark: #404040;
 
     /* font family */
     --font-family-1: "Inter", sans-serif;
@@ -30,8 +34,7 @@ body {
     background-color: var(--background-color);
     font-family: var(--font-family-1);
     color: var(--primary-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
-    transition: padding-top 0.6s cubic-bezier(0.7, 0, 0.3, 1);
+    transition: background-color 0.3s ease, color 0.3s ease, padding-top 0.6s cubic-bezier(0.7, 0, 0.3, 1);
 }
 
 body.dark-mode {
@@ -45,17 +48,12 @@ body.dark-mode {
     background-color: var(--background-color);
     text-align: center;
     border: 1px solid var(--border-color);
-    transition: border-color 0.3s ease, transform 0.3s ease, top 0.3s ease;
-    transition: all 0.6s cubic-bezier(0.7, 0, 0.3, 1);
     position: fixed;
     top: -100%;
     left: 0;
     width: 100%;
     z-index: 999;
-    transition:
-        top 0.6s cubic-bezier(0.7, 0, 0.3, 1),
-        border-color 0.3s ease,
-        transform 0.3s ease;
+    transition: top 0.6s cubic-bezier(0.7, 0, 0.3, 1), border-color 0.3s ease, transform 0.3s ease;
 }
 .navbar.open {
     top: 0;

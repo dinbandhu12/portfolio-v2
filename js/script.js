@@ -92,3 +92,78 @@ document.addEventListener('DOMContentLoaded', function() {
         updateToggleButton('Dark Mode');
     }
 });
+
+// Enhanced Smooth Scrolling
+document.addEventListener('DOMContentLoaded', function() {
+    // Ensure smooth scrolling is enabled
+    if ('scrollBehavior' in document.documentElement.style) {
+        // Modern browsers support CSS scroll-behavior
+        document.documentElement.style.scrollBehavior = 'smooth';
+    } else {
+        // Fallback for older browsers using JavaScript
+        const smoothScrollTo = function(element, target, duration) {
+            target = Math.round(target);
+            duration = Math.round(duration);
+            if (duration < 0) {
+                return Promise.reject("bad duration");
+            }
+            if (duration === 0) {
+                element.scrollTop = target;
+                return Promise.resolve();
+            }
+
+            const start_time = Date.now();
+            const start_element_y = element.scrollTop;
+            const target_element_y = target;
+            const distance = target_element_y - start_element_y;
+            const easing_function = function(t) { return t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1 };
+
+            return new Promise(function(resolve, reject) {
+                let previous_top = element.scrollTop;
+                let ticking = false;
+
+                const scroll_frame = function() {
+                    if (ticking) {
+                        return;
+                    }
+                    ticking = true;
+
+                    const now = Date.now();
+                    const point = Math.min(1, ((now - start_time) / duration));
+                    const frame_y = start_element_y + (distance * easing_function(point));
+                    element.scrollTop = frame_y;
+
+                    if (point === 1) {
+                        resolve();
+                        return;
+                    }
+
+                    if (element.scrollTop === previous_top && element.scrollTop !== frame_y) {
+                        resolve();
+                        return;
+                    }
+                    previous_top = element.scrollTop;
+
+                    ticking = false;
+                    requestAnimationFrame(scroll_frame);
+                };
+
+                requestAnimationFrame(scroll_frame);
+            });
+        };
+
+        // Override anchor link behavior for smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#' || href === '') return;
+                
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    smoothScrollTo(document.documentElement, target.offsetTop - 80, 800);
+                }
+            });
+        });
+    }
+});

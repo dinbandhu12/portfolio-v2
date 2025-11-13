@@ -2,8 +2,7 @@
 ## Getting Started
 
 1. Clone this repository
-2. Open [index.html](cci:7://file:///c:/Users/a1b2d/Desktop/minimal-portfolio/index.html:0:0-0:0) in your web browser
-3. Start customizing the content and styling
+2. Start customizing the content and styling
 
 ## Technologies Used
 

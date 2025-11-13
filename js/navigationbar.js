@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const toggleMenuBtn = document.getElementById('toggle-menu-btn');
     const navbar = document.getElementById('navbar');
     const body = document.body;
-    const menuIcon = document.getElementById('menu-icon');
+    const menuIcon = toggleMenuBtn ? toggleMenuBtn.querySelector('img') : null;
     
     // Check if elements exist
     if (!toggleMenuBtn || !navbar) {
@@ -18,16 +18,15 @@ document.addEventListener('DOMContentLoaded', function() {
         body.classList.toggle('menu-open');
         toggleMenuBtn.classList.toggle('active');
         
-        // Optional: Change menu icon when active
-        if (navbar.classList.contains('open')) {
-            // If you have a close icon SVG, you can swap it here
-            // menuIcon.src = "/assets/icons/close-icon.svg";
-            
-            // Alternatively, you can rotate the icon or add a CSS transform
-            menuIcon.style.transform = "rotate(90deg)";
-        } else {
-            // menuIcon.src = "/assets/icons/menu-icon.svg";
-            menuIcon.style.transform = "rotate(0deg)";
+        // Smooth rotation animation for menu icon
+        if (menuIcon) {
+            if (navbar.classList.contains('open')) {
+                // Rotate icon smoothly when menu opens
+                menuIcon.style.transform = "rotate(90deg)";
+            } else {
+                // Rotate back smoothly when menu closes
+                menuIcon.style.transform = "rotate(0deg)";
+            }
         }
     }
     
