@@ -17,9 +17,9 @@
     />
     <link rel="stylesheet" href="/css/pagetransition.css" />
     <link rel="stylesheet" href="/css/navigationbar.css" />
-    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
     <script src="/js/pageTransition.js"></script>
-    <title>About | DBS World</title>
+    <title>Blog | DBS World</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -66,50 +66,10 @@
         </a>
       </nav>
 
-    <!-- Contact Links -->
-    <div class="contact-links">
-      <div class="block">
-        <div class="contact-link-infos">
-          <div class="contact-link-icons">
-            <img src="/assets/icons/mail.svg" alt="mail" />
-          </div>
-          <a href="mailto:yourname@example.com">yourname@example.com</a>
-        </div>
-      </div>
-
-      <div class="block">
-        <div class="contact-link-infos">
-          <div class="contact-link-icons">
-            <img src="/assets/icons/phone.svg" alt="phone" />
-          </div>
-          <a href="tel:+11234567890">+1 (1234)-567-890</a>
-        </div>
-      </div>
-
-      <div class="block">
-        <div class="contact-link-infos">
-          <div class="contact-link-icons">
-            <img src="/assets/icons/github.svg" alt="github" />
-          </div>
-          <a href="https://www.github.com/username" target="_blank" rel="noopener noreferrer">www.github.com/username</a>
-        </div>
-      </div>
-
-      <div class="block">
-        <div class="contact-link-infos">
-          <div class="contact-link-icons">
-            <img src="/assets/icons/linkedin.svg" alt="linkedin" />
-          </div>
-          <a href="https://www.linkedin.com/in/username" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/username</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- About me section -->
-    <section class="about-me-section">
-      <!-- block 1 -->
-      <div class="about-block">
-        <div class="about-block-1-content">
+    <!-- blog section -->
+    <section class="blog-section">
+      <div class="blog-block">
+        <div class="blog-block-1-content">
           <div class="toggle-container">
             <a href="#" class="toggle-btn">
               Dark Mode
@@ -123,52 +83,59 @@
               <img src="/assets/icons/menu-icon.svg" alt="Menu Icon" />
             </button>
           </div>
-          <h1 class="about-me-bold-text">ABOUT ME</h1>
+          <h1 class="blog-bold-text">BLOG</h1>
         </div>
       </div>
+
       <!-- block 2 -->
-      <div class="about-block">
-        <div class="about-block-2-content">
-          <h2>Hello Again</h2>
-          <p>
-            A UI/UX designer and full-stack developer who designs and builds
-            websites from start to finish combining clean design with solid
-            code. I focus on creating smooth, user-friendly experiences that
-            work beautifully across all devices.
-          </p>
+      <div class="blog-block">
+        <div class="blog-block-2-content">
+          <div class="blog-block-2-content-text">
+            <h2 class="blog-block-2-heading">UI/UX Design</h2>
+            <p class="blog-block-2-para">
+              I design clean, intuitive interfaces focused on real user needs.
+              From wireframes to final visuals, every screen is purposeful and
+              experience led.
+            </p>
+          </div>
+          <img src="/assets/imgs/uiuxdesign.png" alt="UI/UX Design illustration" />
         </div>
       </div>
+
       <!-- block 3 -->
-      <div class="about-block">
-        <div class="about-block-3-content">
-          <div class="about-imgs">
-            <div class="about-img-1">
-              <img src="/assets/imgs/profile.jpg" alt="Profile image 1" />
-            </div>
-            <div class="about-img-2">
-              <img src="/assets/imgs/profile-2.png" alt="Profile image 2" />
-            </div>
+      <div class="blog-block">
+        <div class="blog-block-3-content">
+          <div class="blog-block-3-content-text">
+            <h2 class="blog-block-3-heading">
+              Web <br />
+              Development
+            </h2>
+            <p class="blog-block-3-para">
+              I write modular, maintainable code for fast, responsive websites.
+              Whether it's React on the front or Node on the back performance
+              stays top priority.
+            </p>
           </div>
+          <img src="/assets/imgs/webdevelopment.jpg" alt="Web Development illustration" />
         </div>
       </div>
       <!-- block 4 -->
-      <div class="about-block">
-        <div class="about-block-4-content">
-          <div class="lets-connect-para">
-            <p>
-              Open to projects, ideas, and creative conversations. <br />
-              Let's build something great.
+      <div class="blog-block">
+        <div class="blog-block-4-content">
+          <div class="blog-block-4-content-text">
+            <h2 class="blog-block-4-heading">Full-stack Solution</h2>
+            <p class="blog-block-4-para">
+              From idea to deployment, I handle the full stack combining design
+              thinking, scalable architecture, and modern dev tools to bring
+              complete products to life.
             </p>
           </div>
-          <div class="lets-connect-text">
-            <h2>LETS CONNECT</h2>
-            <img src="/assets/imgs/profile-3.png" alt="Profile image 3" />
-          </div>
+          <img src="/assets/imgs/fullstack.jpg" alt="Full-stack Solution illustration" />
         </div>
       </div>
     </section>
 
-    <!-- footer section -->
+    <!-- footer -->
     <footer class="privacy-section">
       <div class="privacy-content">
         <div class="left">
@@ -202,9 +169,9 @@
     <script src="/js/navigationbar.js"></script>
     <div class="transition-container" id="transitionContainer"></div>
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-          new PageTransition();
+      document.addEventListener("DOMContentLoaded", () => {
+        new PageTransition();
       });
-  </script>
+    </script>
   </body>
 </html>

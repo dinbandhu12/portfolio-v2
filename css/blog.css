@@ -1,0 +1,54 @@
+/* Your existing CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* for light mode */
+    --primary-color: #090909;
+    --secondary-color: #2e2e2e;
+    --tertiary-color: #48494B;
+    --background-color: #F8F4F0;
+    --hover-text-color: #F8F4F0;
+    --border-color: #2f2f2f;
+
+    /* for dark mode */
+    --primary-color-dark: #E5E5E5;
+    --secondary-color-dark: #BABABA;
+    --tertiary-color-dark: #9D9D9D;
+    --background-color-dark: #1a1a1a;
+    --hover-text-color-dark: #2e2e2e;
+    --border-color-dark: #404040;
+
+    /* font family */
+    --font-family-1: "Inter", sans-serif;
+    --font-family-2: "Bodoni Moda", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Offset for fixed navbar */
+}
+
+html, body {
+    transition: scroll-behavior 0.3s ease;
+}
+
+/* Smooth scrolling for all scrollable containers */
+[data-scroll-container] {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-family-1);
+    color: var(--primary-color);
+    transition: background-color 0.3s ease, color 0.3s ease, padding-top 0.6s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--primary-color-dark);
+}
