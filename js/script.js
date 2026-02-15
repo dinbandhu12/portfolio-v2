@@ -38,58 +38,67 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Dark Mode Toggle JavaScript
 document.addEventListener('DOMContentLoaded', function() {
-    // Get the toggle button
-    const toggleBtn = document.querySelector('.toggle-btn');
+    // Get all toggle buttons (there might be multiple on different pages)
+    const toggleBtns = document.querySelectorAll('.toggle-btn');
     const body = document.body;
-    
+
+    // If no toggle button found, exit
+    if (toggleBtns.length === 0) {
+        return;
+    }
+
     // Check for saved preference in localStorage
     const darkMode = localStorage.getItem('darkMode');
-    
+
     // If dark mode was previously enabled, reapply it
     if (darkMode === 'enabled') {
         enableDarkMode();
     }
-    
-    // Add click event to toggle button
-    toggleBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        // Check if dark mode is currently enabled
-        if (body.classList.contains('dark-mode')) {
-            disableDarkMode();
-        } else {
-            enableDarkMode();
-        }
+
+    // Add click event to all toggle buttons
+    toggleBtns.forEach(toggleBtn => {
+        toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            // Check if dark mode is currently enabled
+            if (body.classList.contains('dark-mode')) {
+                disableDarkMode();
+            } else {
+                enableDarkMode();
+            }
+        });
     });
-    
+
     // Functions to handle dark mode
     function enableDarkMode() {
         body.classList.add('dark-mode');
-        updateToggleButton('Light Mode');
+        updateAllToggleButtons('Light Mode');
         localStorage.setItem('darkMode', 'enabled');
     }
-    
+
     function disableDarkMode() {
         body.classList.remove('dark-mode');
-        updateToggleButton('Dark Mode');
+        updateAllToggleButtons('Dark Mode');
         localStorage.setItem('darkMode', 'disabled');
     }
-    
-    // Update toggle button text and recreate the box
-    function updateToggleButton(text) {
-        toggleBtn.textContent = text + ' ';
-        
-        // Recreate the box span since changing textContent removes all children
-        const boxSpan = document.createElement('span');
-        boxSpan.className = 'box';
-        toggleBtn.appendChild(boxSpan);
+
+    // Update all toggle buttons text and recreate the box
+    function updateAllToggleButtons(text) {
+        toggleBtns.forEach(toggleBtn => {
+            toggleBtn.textContent = text + ' ';
+
+            // Recreate the box span since changing textContent removes all children
+            const boxSpan = document.createElement('span');
+            boxSpan.className = 'box';
+            toggleBtn.appendChild(boxSpan);
+        });
     }
-    
+
     // Initialize the toggle button text based on current mode
     if (body.classList.contains('dark-mode')) {
-        updateToggleButton('Light Mode');
+        updateAllToggleButtons('Light Mode');
     } else {
-        updateToggleButton('Dark Mode');
+        updateAllToggleButtons('Dark Mode');
     }
 });
 

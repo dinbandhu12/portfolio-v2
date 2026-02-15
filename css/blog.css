@@ -236,7 +236,7 @@ body.dark-mode .blog-block-4-2-content-text {
 }
 
 .blog-block-2-content-text {
-  height: 50vh;
+  height: auto;
 }
 
 .blog-block-2-content-text .blog-block-2-featured {
@@ -259,8 +259,8 @@ body.dark-mode .blog-block-2-content-text .blog-block-2-featured {
 .blog-block-4-1-content-text .blog-block-4-1-heading,
 .blog-block-4-2-content-text .blog-block-4-2-heading {
   color: var(--primary-color);
-  font-size: 36px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 500;
   padding: 26px 10px;
   text-transform: uppercase;
   position: relative;
@@ -453,7 +453,7 @@ body.dark-mode .read-more-link::after {
   }
 
   .blog-block-1-content {
-    height: 50vh;
+    height: auto;
   }
 
   .blog-block-2-content,

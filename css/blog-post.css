@@ -1,0 +1,990 @@
+/* Blog Post Page Styles - 3 Column Layout */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #e8e8e8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main Section */
+.blog-post-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  min-height: calc(100vh - 200px);
+}
+
+.blog-post-wrapper {
+  display: grid;
+  grid-template-columns: 250px 1fr 280px;
+  gap: 2rem;
+  background: #f5f5f5;
+  align-items: start;
+}
+
+/* Left Sidebar */
+.blog-left-sidebar {
+  background: #d4d4d4;
+  padding: 2rem 1.5rem;
+}
+
+.sidebar-section {
+  margin-bottom: 2.5rem;
+}
+
+.btb-btn {
+  text-decoration: none;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid #111;
+  padding: 0.6rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btb-btn:hover {
+  background: #111;
+  color: white;
+  cursor: pointer;
+  gap: 1rem;
+}
+
+.sidebar-title {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  color: #111;
+  letter-spacing: -0.5px;
+}
+
+.sidebar-heading {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111;
+  line-height: 1.3;
+}
+
+.sidebar-text {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Subscribe Section */
+.subscribe-section {
+  border-top: 2px solid #111;
+  padding-top: 1.5rem;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.subscribe-input {
+  padding: 0.6rem;
+  border: 1px solid #999;
+  background: white;
+  font-size: 0.85rem;
+  font-family: "Inter", sans-serif;
+  pointer-events: none;
+}
+
+.subscribe-input:focus {
+  outline: none;
+  border-color: #111;
+}
+
+.subscribe-btn {
+  padding: 0.6rem;
+  background: #111;
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  pointer-events: none;
+}
+
+/* .subscribe-btn:hover {
+  background: #333;
+} */
+
+.subscribe-note {
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Sidebar Social */
+.sidebar-social {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column; 
+  padding-top: 1.5rem;
+  border-top: 1px solid #999;
+}
+
+.sidebar-socialheading {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.sidebar-social-icon img {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.2s;
+}
+
+.sidebar-social-icon:hover img {
+  opacity: 0.6;
+}
+
+/* Main Content Area */
+.blog-main-content {
+  background: white;
+  padding: 2rem;
+  /* min-height: 600px; */
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.toggle-btn .box {
+  width: 40px;
+  height: 20px;
+  background: #ddd;
+  border-radius: 10px;
+  position: relative;
+  transition: background 0.3s;
+}
+
+.toggle-btn .box::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: left 0.3s;
+}
+
+.toggle-menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.toggle-menu-btn img {
+  width: 24px;
+  height: 24px;
+  transition: all 0.2s ease-in-out;
+}
+
+.blog-post-container {
+  max-width: 100%;
+}
+
+.loading {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Blog Post Header */
+.blog-post-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #111;
+}
+
+.blog-post-meta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
+.blog-post-date {
+  color: #666;
+  font-weight: 500;
+}
+
+.blog-post-category {
+  background: #111;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.blog-post-title {
+  font-family: "Bodoni Moda", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  color: #111;
+}
+
+.blog-post-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+/* Blog Post Content */
+.blog-post-content {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.blog-post-content h1 {
+  font-family: "Bodoni Moda", serif;
+  font-size: 2.2rem;
+  margin: 2rem 0 1rem;
+  color: #111;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.blog-post-content h2 {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem;
+  color: #111;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.blog-post-content h3 {
+  font-size: 1.4rem;
+  margin: 1.5rem 0 1rem;
+  color: #222;
+  font-weight: 600;
+}
+
+.blog-post-content p {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.blog-post-content ul,
+.blog-post-content ol {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+.blog-post-content li {
+  margin-bottom: 0.2rem;
+  color: #444;
+}
+
+.blog-post-content a {
+  color: #111;
+  text-decoration: underline;
+  transition: opacity 0.2s;
+}
+
+.blog-post-content a:hover {
+  opacity: 0.7;
+}
+
+.blog-post-content strong {
+  font-weight: 600;
+  color: #111;
+}
+
+.blog-post-content em {
+  font-style: italic;
+}
+
+.blog-post-content code {
+  background: #f5f5f5;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+  border: 1px solid #e0e0e0;
+}
+
+.blog-post-content pre {
+  background: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border: 1px solid #e0e0e0;
+}
+
+.blog-post-content pre code {
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+.blog-post-content blockquote {
+  border-left: 4px solid #111;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #555;
+}
+
+.blog-post-content hr {
+  border: none;
+  border-top: 2px solid #e0e0e0;
+  margin: 2rem 0;
+}
+
+/* Blog Post Footer */
+.blog-post-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #111;
+}
+
+/* Share Section */
+.share-section {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.share-title {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111;
+  letter-spacing: 0.5px;
+}
+
+.share-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  color: #111;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.share-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.share-twitter:hover {
+  background: #1DA1F2;
+  color: white;
+  border-color: #1DA1F2;
+}
+
+.share-facebook:hover {
+  background: #1877F2;
+  color: white;
+  border-color: #1877F2;
+}
+
+.share-linkedin:hover {
+  background: #0A66C2;
+  color: white;
+  border-color: #0A66C2;
+}
+
+.share-email:hover {
+  background: #111;
+  color: white;
+  border-color: #111;
+}
+
+.share-copy:hover {
+  background: #111;
+  color: white;
+  border-color: #111;
+}
+
+.back-to-blog {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #111;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.back-to-blog:hover {
+  opacity: 0.7;
+}
+
+.back-to-blog i {
+  font-size: 1.2rem;
+}
+
+/* Next Post Link in Left Sidebar */
+.next-post-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  color: #111;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: opacity 0.2s;
+}
+
+.next-post-link:hover {
+  opacity: 0.7;
+}
+
+.next-post-link i {
+  font-size: 1rem;
+}
+
+/* Right Sidebar */
+.blog-right-sidebar {
+  background: #f9f9f9;
+  padding: 2rem 1.5rem;
+}
+
+.about-section {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #111;
+}
+
+.about-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #111;
+}
+
+.about-text {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.sidebar-subheading {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Recent Posts */
+.recent-posts-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.recent-posts-list {
+  list-style: none;
+}
+
+.recent-post-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.recent-post-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.recent-post-link {
+  text-decoration: none;
+  color: #111;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.4;
+  transition: opacity 0.2s;
+  display: block;
+}
+
+.recent-post-link:hover {
+  opacity: 0.7;
+}
+
+.recent-post-date {
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+/* Categories */
+.categories-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.categories-list {
+  list-style: none;
+}
+
+.category-item {
+  margin-bottom: 0.75rem;
+}
+
+.category-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+  display: block;
+  padding: 0.25rem 0;
+}
+
+.category-link:hover {
+  color: #111;
+  font-weight: 500;
+}
+
+.category-link::before {
+  content: "→ ";
+  margin-right: 0.5rem;
+}
+
+/* Tags */
+.tags-section {
+  padding-top: 2rem;
+}
+
+.tags-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  padding: 0.4rem 0.8rem;
+  background: white;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.8rem;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+.tag:hover {
+  background: #111;
+  color: white;
+  border-color: #111;
+}
+
+/* Footer Styles */
+.blog-footer-section {
+  background-color: #f9f9f9;
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+.blog-footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-text {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon img {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.2s;
+}
+
+.social-icon:hover img {
+  opacity: 0.7;
+}
+
+.rights {
+  background-color: #f9f9f9;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.right-text {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .blog-post-wrapper {
+    grid-template-columns: 220px 1fr 260px;
+    gap: 1.5rem;
+  }
+
+  .blog-left-sidebar {
+    padding: 1.5rem 1rem;
+  }
+
+  .blog-right-sidebar {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .blog-post-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .blog-left-sidebar,
+  .blog-right-sidebar {
+    display: none;
+  }
+
+  .blog-main-content {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-post-section {
+    padding: 1rem;
+  }
+
+  .blog-main-content {
+    padding: 1rem;
+  }
+
+  .blog-post-title {
+    font-size: 2rem;
+  }
+
+  .blog-post-content {
+    font-size: 0.95rem;
+  }
+
+  .blog-post-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .blog-post-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .blog-post-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .blog-footer-content {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-post-title {
+    font-size: 1.5rem;
+  }
+
+  .blog-post-content {
+    font-size: 0.9rem;
+  }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+body.dark-mode .blog-post-wrapper {
+  background: #222;
+}
+
+body.dark-mode .toggle-menu-btn img {
+  filter: invert(1);
+}
+
+body.dark-mode .blog-left-sidebar {
+  background: #333;
+}
+
+body.dark-mode .btb-btn {
+  background: #fff;
+  color: #111;
+}
+
+body.dark-mode .btb-btn:hover {
+  background: #c9c9c9;
+}
+
+body.dark-mode .sidebar-socialheading {
+  color: #fff;
+}
+
+body.dark-mode .sidebar-social img {
+  filter: invert(1);
+}
+
+body.dark-mode .blog-main-content {
+  background: #2a2a2a;
+  color: #e0e0e0;
+}
+
+body.dark-mode .blog-right-sidebar {
+  background: #343237;
+}
+
+body.dark-mode .sidebar-title,
+body.dark-mode .sidebar-heading,
+body.dark-mode .sidebar-subheading {
+  color: #fff;
+}
+
+body.dark-mode .sidebar-text,
+body.dark-mode .about-text {
+  color: #ccc;
+}
+
+body.dark-mode .subscribe-input {
+  background: #333;
+  border-color: #555;
+  color: #fff;
+}
+
+body.dark-mode .subscribe-section {
+  border-top: 2px solid #555;
+}
+
+/* body.dark-mode .subscribe-btn {
+  background: #fff;
+  color: #111;
+} */
+
+/* body.dark-mode .subscribe-btn:hover {
+  background: #e0e0e0;
+} */
+
+body.dark-mode .toggle-btn {
+  color: #e0e0e0;
+}
+
+body.dark-mode .toggle-btn .box {
+  background: #555;
+}
+
+body.dark-mode .toggle-btn .box::after {
+  left: 22px;
+}
+
+body.dark-mode .blog-post-title,
+body.dark-mode .blog-post-content h1,
+body.dark-mode .blog-post-content h2,
+body.dark-mode .blog-post-content h3 {
+  color: #fff;
+}
+
+body.dark-mode .blog-post-content p,
+body.dark-mode .blog-post-content li {
+  color: #ccc;
+}
+
+body.dark-mode .blog-post-header {
+  border-bottom-color: #444;
+}
+
+body.dark-mode .blog-post-footer {
+  border-top-color: #444;
+}
+
+body.dark-mode .blog-post-category {
+  background: #fff;
+  color: #111;
+}
+
+body.dark-mode .share-section {
+  border-bottom-color: #444;
+}
+
+body.dark-mode .share-title {
+  color: #fff;
+}
+
+body.dark-mode .share-btn {
+  background: #333;
+  border-color: #555;
+  color: #fff;
+}
+
+body.dark-mode .blog-post-content strong {
+  color: #fff;
+}
+
+body.dark-mode .back-to-blog,
+body.dark-mode .next-post-link {
+  color: #fff;
+}
+
+body.dark-mode .recent-post-link,
+body.dark-mode .category-link {
+  color: #ccc;
+}
+
+body.dark-mode .recent-post-link:hover,
+body.dark-mode .category-link:hover {
+  color: #fff;
+}
+
+body.dark-mode .recent-post-item {
+  border-bottom-color: #444;
+}
+
+body.dark-mode .tag {
+  background: #333;
+  border-color: #555;
+  color: #ccc;
+}
+
+body.dark-mode .tag:hover {
+  background: #fff;
+  color: #111;
+  border-color: #fff;
+}
+
+body.dark-mode .about-section,
+body.dark-mode .recent-posts-section,
+body.dark-mode .categories-section {
+  border-bottom-color: #444;
+}
+
+body.dark-mode .blog-post-content code {
+  background: #333;
+  border-color: #555;
+  color: #fff;
+}
+
+body.dark-mode .blog-post-content pre {
+  background: #333;
+  border-color: #555;
+}
+
+body.dark-mode .blog-post-content blockquote {
+  border-left-color: #fff;
+  color: #ccc;
+}
+
+body.dark-mode .blog-post-content a {
+  color: #4da6ff;
+}
+
+body.dark-mode .blog-footer-section,
+body.dark-mode .rights {
+  background-color: #2a2a2a;
+}
+
+body.dark-mode .social-text,
+body.dark-mode .right-text {
+  color: #999;
+}
+
+body.dark-mode .subscribe-note {
+  color: #999;
+}
+
+body.dark-mode .recent-post-date {
+  color: #999;
+}
+
+body.dark-mode .blog-post-date {
+  color: #999;
+}

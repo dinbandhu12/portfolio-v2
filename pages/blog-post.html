@@ -70,23 +70,127 @@
 
     <!-- Blog Post Container -->
     <section class="blog-post-section">
-      <div class="toggle-container">
-        <a href="#" class="toggle-btn">
-          Dark Mode
-          <span class="box"></span>
-        </a>
-        <button
-          id="toggle-menu-btn"
-          class="toggle-menu-btn"
-          aria-label="Toggle Menu"
-        >
-          <img src="/assets/icons/menu-icon.svg" alt="Menu Icon" />
-        </button>
-      </div>
+      <div class="blog-post-wrapper">
+        <!-- Left Sidebar -->
+        <aside class="blog-left-sidebar">
+          <div class="sidebar-section">
+            <a href="/pages/blog.html" class="btb-btn">
+              <i class="ri-arrow-left-long-line"></i>
+              Back to Blog
+            </a>
+            <h2 class="sidebar-title" id="currentBlogTitle">LATEST AT<br>INNOVATIONS</h2>
+          </div>
 
-      <div class="blog-post-container">
-        <!-- Content will be loaded dynamically by JavaScript -->
-        <div class="loading">Loading blog post...</div>
+          <div class="sidebar-section" id="nextBlogSection">
+            <h3 class="sidebar-heading">FRONTEND<br>DEVELOPMENT</h3>
+            <p class="sidebar-text">
+              Modern web development techniques and best practices for creating
+              responsive, performant user interfaces.
+            </p>
+          </div>
+
+          <!-- <div class="sidebar-section subscribe-section">
+            <h3 class="sidebar-heading">SUBSCRIBE</h3>
+            <form class="subscribe-form">
+              <input
+                type="email"
+                placeholder="Your email address"
+                class="subscribe-input"
+                required
+              />
+              <button type="submit" class="subscribe-btn">SIGN UP</button>
+            </form>
+            <p class="subscribe-note">Comming soon</p>
+          </div> -->
+
+          <div class="sidebar-social">
+            <h3 class="sidebar-socialheading">FOLLOW ME</h3>
+            <div class="social-links">
+            <a href="https://www.instagram.com/" class="sidebar-social-icon">
+              <img src="/assets/icons/instagram.svg" alt="instagram" />
+            </a>
+            <a href="https://www.linkedin.com/" class="sidebar-social-icon">
+              <img src="/assets/icons/linkedin.svg" alt="linkedin" />
+            </a>
+            <a href="https://www.twitter.com/" class="sidebar-social-icon">
+              <img src="/assets/icons/twitter-x.svg" alt="twitter" />
+            </a>
+            <a href="https://www.github.com/" class="sidebar-social-icon">
+              <img src="/assets/icons/github.svg" alt="github" />
+            </a>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="blog-main-content">
+          <div class="toggle-container">
+            <a href="#" class="toggle-btn">
+              Dark Mode
+              <span class="box"></span>
+            </a>
+            <button
+              id="toggle-menu-btn"
+              class="toggle-menu-btn"
+              aria-label="Toggle Menu"
+            >
+              <img src="/assets/icons/menu-icon.svg" alt="Menu Icon" />
+            </button>
+          </div>
+
+          <div class="blog-post-container">
+            <!-- Content will be loaded dynamically by JavaScript -->
+            <div class="loading">Loading blog post...</div>
+          </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="blog-right-sidebar">
+          <div class="sidebar-section about-section">
+            <h3 class="sidebar-heading">ABOUT ME</h3>
+            <div class="about-profile">
+              <img src="/assets/imgs/profile-2.png" alt="Profile" class="about-image" />
+              <p class="about-text">
+                I'm DBS, a full-stack developer passionate about creating
+                beautiful, functional web experiences that solve real world problems.
+              </p>
+            </div>
+          </div>
+
+          <div class="sidebar-section recent-posts-section">
+            <h4 class="sidebar-subheading">RECENT POSTS</h4>
+            <ul class="recent-posts-list" id="recentPostsList">
+              <!-- Will be populated by JavaScript -->
+            </ul>
+          </div>
+
+          <div class="sidebar-section categories-section">
+            <h4 class="sidebar-subheading">CATEGORIES</h4>
+            <ul class="categories-list">
+              <li class="category-item">
+                <a href="/pages/blog.html" class="category-link">Design</a>
+              </li>
+              <li class="category-item">
+                <a href="/pages/blog.html" class="category-link">Development</a>
+              </li>
+              <li class="category-item">
+                <a href="/pages/blog.html" class="category-link">Technology</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar-section tags-section">
+            <h4 class="sidebar-subheading">POPULAR TAGS</h4>
+            <div class="tags-cloud">
+              <span class="tag">UI/UX</span>
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">WebAssembly</span>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
 
@@ -117,7 +221,7 @@
     </footer>
 
     <div class="rights">
-      <span class="right-text">© All Rights Reserved By DBS World.</span>
+      <span class="right-text">© All Rights Reserved By DBS.</span>
     </div>
 
     <script src="/js/script.js"></script>
