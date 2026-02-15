@@ -273,7 +273,7 @@ body.dark-mode .toggle-menu-btn img {
 }
 
 .block-1-heading {
-  font-size: 54px;
+  font-size: 64px;
   font-weight: 600;
   color: var(--primary-color);
   transition: color 0.3s ease;
@@ -305,7 +305,7 @@ body.dark-mode .block-1-subheading {
 /* Add responsive media queries */
 @media (max-width: 1024px) {
   .block-1-heading {
-    font-size: 56px;
+    font-size: 64px;
   }
   .block-1-subheading {
     font-size: 20px;

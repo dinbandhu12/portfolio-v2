@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,9 +23,9 @@
 
     <link rel="stylesheet" href="/css/pagetransition.css" />
     <link rel="stylesheet" href="/css/navigationbar.css" />
-    <link rel="stylesheet" href="/css/services.css" />
+    <link rel="stylesheet" href="/css/blog-post.css" />
     <script src="/js/pageTransition.js"></script>
-    <title>Services | DBS World Portfolio</title>
+    <title>Blog Post | DBS World Portfolio</title>
   </head>
 
   <body>
@@ -41,15 +45,15 @@
           alt="right-icon"
           class="r-icon"
       /></a>
-      <a href="/pages/work.html" data-transition="true"
-        >My Work
+      <a href="/pages/services.html" data-transition="true"
+        >Services
         <img
           src="/assets/icons/r-arrow-black-v2.svg"
           alt="right-icon"
           class="r-icon"
       /></a>
-      <a href="/pages/blog.html" data-transition="true"
-        >Blog
+      <a href="/pages/work.html" data-transition="true"
+        >My Work
         <img
           src="/assets/icons/r-arrow-black-v2.svg"
           alt="right-icon"
@@ -64,77 +68,31 @@
       /></a>
     </nav>
 
-    <section class="services-section">
-      <div class="services-block">
-        <div class="services-block-1-content">
-          <div class="toggle-container">
-            <a href="#" class="toggle-btn">
-              Dark Mode
-              <span class="box"></span>
-            </a>
-            <button
-              id="toggle-menu-btn"
-              class="toggle-menu-btn"
-              aria-label="Toggle Menu"
-            >
-              <img src="/assets/icons/menu-icon.svg" alt="Menu Icon" />
-            </button>
-          </div>
-          <h1 class="services-bold-text">SERVICES</h1>
-        </div>
+    <!-- Blog Post Container -->
+    <section class="blog-post-section">
+      <div class="toggle-container">
+        <a href="#" class="toggle-btn">
+          Dark Mode
+          <span class="box"></span>
+        </a>
+        <button
+          id="toggle-menu-btn"
+          class="toggle-menu-btn"
+          aria-label="Toggle Menu"
+        >
+          <img src="/assets/icons/menu-icon.svg" alt="Menu Icon" />
+        </button>
       </div>
 
-      <!-- block 2 -->
-      <div class="services-block">
-        <div class="services-block-2-content">
-          <div class="services-block-2-content-text">
-            <h2 class="services-block-2-heading">UI/UX Design</h2>
-            <p class="services-block-2-para">
-              I design clean, intuitive interfaces focused on real user needs.
-              From wireframes to final visuals, every screen is purposeful and
-              experience led.
-            </p>
-          </div>
-          <img src="/assets/imgs/uiuxdesign.png" alt="UI/UX Design illustration" />
-        </div>
-      </div>
-
-      <!-- block 3 -->
-      <div class="services-block">
-        <div class="services-block-3-content">
-          <div class="services-block-3-content-text">
-            <h2 class="services-block-3-heading">
-              Web <br />
-              Development
-            </h2>
-            <p class="services-block-3-para">
-              I write modular, maintainable code for fast, responsive websites.
-              Whether it's React on the front or Node on the back performance
-              stays top priority.
-            </p>
-          </div>
-          <img src="/assets/imgs/webdevelopment.jpg" alt="Web Development illustration" />
-        </div>
-      </div>
-      <!-- block 4 -->
-      <div class="services-block">
-        <div class="services-block-4-content">
-          <div class="services-block-4-content-text">
-            <h2 class="services-block-4-heading">Full-stack Solution</h2>
-            <p class="services-block-4-para">
-              From idea to deployment, I handle the full stack combining design
-              thinking, scalable architecture, and modern dev tools to bring
-              complete products to life.
-            </p>
-          </div>
-          <img src="/assets/imgs/fullstack.jpg" alt="Full-stack Solution illustration" />
-        </div>
+      <div class="blog-post-container">
+        <!-- Content will be loaded dynamically by JavaScript -->
+        <div class="loading">Loading blog post...</div>
       </div>
     </section>
 
     <!-- footer section -->
-    <footer class="privacy-section">
-      <div class="privacy-content">
+    <footer class="blog-footer-section">
+      <div class="blog-footer-content">
         <div class="left">
           <span class="social-text">Social Media</span>
         </div>
@@ -164,6 +122,7 @@
 
     <script src="/js/script.js"></script>
     <script src="/js/navigationbar.js"></script>
+    <script src="/js/blog-loader.js"></script>
     <div class="transition-container" id="transitionContainer"></div>
     <script>
       document.addEventListener("DOMContentLoaded", () => {

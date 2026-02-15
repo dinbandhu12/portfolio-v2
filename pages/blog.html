@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,58 +20,54 @@
       href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="/css/pagetransition.css" />
     <link rel="stylesheet" href="/css/navigationbar.css" />
     <link rel="stylesheet" href="/css/blog.css" />
     <script src="/js/pageTransition.js"></script>
-    <title>Blog | DBS World</title>
+    <title>Blog | DBS World Portfolio</title>
   </head>
+
   <body>
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
-      <a href="/" data-transition="true">
-        Home
+      <a href="/" data-transition="true"
+        >Home
         <img
           src="/assets/icons/r-arrow-black-v2.svg"
           alt="right-icon"
           class="r-icon"
-          />
-        </a>
-        <a href="/pages/services.html" data-transition="true">
-          Services
-          <img
-            src="/assets/icons/r-arrow-black-v2.svg"
-            alt="right-icon"
-            class="r-icon"
-          />
-        </a>
-        <a href="/pages/work.html" data-transition="true">
-          My Work
-          <img
-            src="/assets/icons/r-arrow-black-v2.svg"
-            alt="right-icon"
-            class="r-icon"
-          />
-        </a>
-        <a href="/pages/contact.html" data-transition="true">
-          Contact
-          <img
-            src="/assets/icons/r-arrow-black-v2.svg"
-            alt="right-icon"
-            class="r-icon"
-          />
-        </a>
-        <a href="/pages/blog.html" data-transition="true">
-          Blog
-          <img
-            src="/assets/icons/r-arrow-black-v2.svg"
-            alt="right-icon"
-            class="r-icon"
-          />
-        </a>
-      </nav>
+      /></a>
+      <a href="/pages/about.html" data-transition="true"
+        >About
+        <img
+          src="/assets/icons/r-arrow-black-v2.svg"
+          alt="right-icon"
+          class="r-icon"
+      /></a>
+      <a href="/pages/services.html" data-transition="true"
+        >Services
+        <img
+          src="/assets/icons/r-arrow-black-v2.svg"
+          alt="right-icon"
+          class="r-icon"
+      /></a>
+      <a href="/pages/work.html" data-transition="true"
+        >My Work
+        <img
+          src="/assets/icons/r-arrow-black-v2.svg"
+          alt="right-icon"
+          class="r-icon"
+      /></a>
+      <a href="/pages/contact.html" data-transition="true"
+        >Contact
+        <img
+          src="/assets/icons/r-arrow-black-v2.svg"
+          alt="right-icon"
+          class="r-icon"
+      /></a>
+    </nav>
 
-    <!-- blog section -->
     <section class="blog-section">
       <div class="blog-block">
         <div class="blog-block-1-content">
@@ -91,53 +92,94 @@
       <div class="blog-block">
         <div class="blog-block-2-content">
           <div class="blog-block-2-content-text">
+            <h4 class="blog-block-2-featured">FEATURED POST</h4>
             <h2 class="blog-block-2-heading">UI/UX Design</h2>
             <p class="blog-block-2-para">
               I design clean, intuitive interfaces focused on real user needs.
               From wireframes to final visuals, every screen is purposeful and
               experience led.
+              <br>
+              <a href="#" class="read-more-link">Read More 
+                <i class="ri-arrow-right-long-line"></i>
+              </a>
             </p>
           </div>
-          <img src="/assets/imgs/uiuxdesign.png" alt="UI/UX Design illustration" />
+          <img src="/assets/imgs/blog-ux-design.jpg" alt="UI/UX Design illustration" />
         </div>
       </div>
 
       <!-- block 3 -->
       <div class="blog-block">
+      <!-- <div class="blog-post-1-block"> -->
         <div class="blog-block-3-content">
-          <div class="blog-block-3-content-text">
-            <h2 class="blog-block-3-heading">
+          <div class="blog-block-3-1-content-text">
+            <h2 class="blog-block-3-1-heading">
               Web <br />
               Development
             </h2>
-            <p class="blog-block-3-para">
+            <p class="blog-block-3-1-para">
               I write modular, maintainable code for fast, responsive websites.
               Whether it's React on the front or Node on the back performance
               stays top priority.
+              <br>
+              <a href="#" class="read-more-link">Read More 
+                <i class="ri-arrow-right-long-line"></i>
+              </a>
             </p>
           </div>
-          <img src="/assets/imgs/webdevelopment.jpg" alt="Web Development illustration" />
+          <div class="blog-block-3-2-content-text">
+            <h2 class="blog-block-3-2-heading">
+              The Future of <br />
+              WebAssembly
+            </h2>
+            <p class="blog-block-3-2-para">
+              WebAssembly is changing how we build for the web. It brings near-native
+              performance to browsers, enabling complex applications like games, video
+              editors, and scientific tools to run smoothly in the browser. Combined with
+              JavaScript, it unlocks powerful new possibilities for web development.
+              <br>
+              <a href="#" class="read-more-link">Read More 
+                <i class="ri-arrow-right-long-line"></i>
+              </a>
+            </p>
+          </div>
         </div>
       </div>
+
       <!-- block 4 -->
       <div class="blog-block">
         <div class="blog-block-4-content">
-          <div class="blog-block-4-content-text">
-            <h2 class="blog-block-4-heading">Full-stack Solution</h2>
-            <p class="blog-block-4-para">
+          <div class="blog-block-4-1-content-text">
+            <h2 class="blog-block-4-1-heading">Full-stack Solution</h2>
+            <p class="blog-block-4-1-para">
               From idea to deployment, I handle the full stack combining design
               thinking, scalable architecture, and modern dev tools to bring
               complete products to life.
+              <br>
+              <a href="#" class="read-more-link">Read More 
+                <i class="ri-arrow-right-long-line"></i>
+              </a>
             </p>
           </div>
-          <img src="/assets/imgs/fullstack.jpg" alt="Full-stack Solution illustration" />
+          <div class="blog-block-4-2-content-text">
+            <h2 class="blog-block-4-2-heading">Building Accessible <br> User Interfaces</h2>
+            <p class="blog-block-4-2-para">
+              Creating interfaces that everyone can use is essential. By following accessibility guidelines, using proper HTML semantics, and testing with assistive technologies, we can build web experiences that are inclusive and easy to navigate for all users.
+              <br>
+              <a href="#" class="read-more-link">Read More 
+                <i class="ri-arrow-right-long-line"></i>
+              </a>
+            </p>
+          </div>
+          <!-- <img src="/assets/imgs/fullstack.jpg" alt="Full-stack Solution illustration" /> -->
         </div>
       </div>
     </section>
 
-    <!-- footer -->
-    <footer class="privacy-section">
-      <div class="privacy-content">
+
+    <!-- footer section -->
+    <footer class="blog-footer-section">
+      <div class="blog-footer-content">
         <div class="left">
           <span class="social-text">Social Media</span>
         </div>
@@ -167,6 +209,7 @@
 
     <script src="/js/script.js"></script>
     <script src="/js/navigationbar.js"></script>
+    <script src="/js/blog-loader.js"></script>
     <div class="transition-container" id="transitionContainer"></div>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
