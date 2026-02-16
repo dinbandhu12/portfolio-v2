@@ -2,7 +2,7 @@
 title: Bridging the Gap - Elevating India's Education System to Global Standards
 date: 2026-02-13
 featured: false
-image: /assets/imgs/b3-1.avif
+image: /assets/bpimgs/b3-1.png
 excerpt: As an engineer, I perceive that the disparities in education systems around the world, especially when comparing India to the United States, have profound implications for the future of our nations. Education is a critical factor in shaping the workforce and driving innovation.
 category: Education
 ---
@@ -11,7 +11,7 @@ category: Education
 
 As an engineer, I perceive that the disparities in education systems around the world, especially when comparing India to the United States, have profound implications for the future of our nations. Education is a critical factor in shaping the workforce and driving innovation and progress. In this article, we will delve into the stark differences between the Indian and American education systems from an engineer's perspective, keeping in mind that the comparison is applicable primarily to the American education system and not necessarily to other countries.
 
-![Students in Classroom](/assets/imgs/b3-1.avif)
+![Students in Classroom](/assets/bpimgs/b3-1.png)
 
 ## The Current State of Indian Education
 
@@ -27,7 +27,7 @@ The American education system stands in stark contrast. It is known for its flex
 
 American schools promote active student participation and interaction, making learning a holistic and engaging experience. Moreover, the superior infrastructure and resources available in American educational institutions create an environment conducive to innovation, particularly for engineering students.
 
-![Education Technology](/assets/imgs/b3-2.avif)
+![Education Technology](/assets/bpimgs/b3-2.png)
 
 ## Challenges and Opportunities
 
@@ -51,4 +51,4 @@ Elevating India's education system to match global standards is not just a matte
 
 ---
 
-*What changes would you like to see in India's education system? Share your thoughts in the comments below.*
+_What changes would you like to see in India's education system? Share your thoughts in the comments below._

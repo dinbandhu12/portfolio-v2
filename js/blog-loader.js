@@ -51,6 +51,9 @@ class BlogLoader {
     // Italic
     html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
 
+    // Images (must come before links to avoid conflicts)
+    html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" class="blog-content-image">');
+
     // Links
     html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
 

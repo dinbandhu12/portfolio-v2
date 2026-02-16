@@ -2,7 +2,7 @@
 title: AI in Software Development - Opportunities, Challenges, and Solutions
 date: 2026-02-15
 featured: true
-image: /assets/imgs/b1.avif
+image: /assets/bpimgs/b1.png
 excerpt: There has been a phenomenal increase in the adoption of artificial intelligence (AI) in software development, more than doubling from 20% in 2017 to a staggering 50% by 2022. This shift has ushered in a new era for developers, bringing many opportunities along with serious challenges.
 category: Technology
 ---
@@ -11,23 +11,23 @@ category: Technology
 
 There has been a phenomenal increase in the adoption of artificial intelligence (AI) in software development, more than doubling from 20% in 2017 to a staggering 50% by 2022, according to the McKinsey study. That shift this complexity ushered in a new era for manufacturers, bringing many opportunities along with serious challenges. In this article, we explore the impact of different aspects of AI on developers, combining insights from reputable sources, and in real time supports our analysis.
 
-![AI in Software Development](/assets/imgs/b1.avif)
+![AI in Software Development](/assets/bpimgs/b1.png)
 
 ## Positive impact of AI on developers
 
 The ability of AI to contribute to a variety of industries has had a profound impact on developers. According to a GitHub report, developers in the U.S. of respondents, 92% already use AI coding tools in and outside of their work. These tools help increase software productivity, efficiency, and overall performance in unprecedented ways.
 
-![Developers using AI tools](/assets/imgs/b1-.avif)
+![Developers using AI tools](/assets/bpimgs/b1-1.png)
 
 Through AI, developers are empowered to explore new frontiers in application development. Pre-trained models and APIs enable state-of-the-art applications such as voice assistants, chatbots, image recognition, and natural language processing. This opportunity for innovation has opened doors that were previously difficult or impossible to access, allowing developers to build more sophisticated solutions with less effort.
 
-![Innovation in Development](/assets/imgs/b1-2.avif)
+![Innovation in Development](/assets/bpimgs/b1-2.png)
 
 ## Negative Impacts and Challenges
 
 Integrating AI raises ethical, legal and social concerns that cannot be ignored. According to a survey by Forbes Advisors, 64% of businesses expect AI to increase productivity while simultaneously raising concerns about its ethical, legal, and social implications. This highlights the importance of careful consideration to ensure that AI develops responsibly with proper emphasis on ethical practices.
 
-![Challenges in AI Development](/assets/imgs/b1-3.avif)
+![Challenges in AI Development](/assets/bpimgs/b1-3.png)
 
 Developers must adapt to the evolving AI landscape, requiring new skills in data science, machine learning, and AI programming. When these skills in addition to power, the learning curve can be steep and time-consuming. This skill acquisition challenge represents a significant barrier for many developers who need to balance their current work responsibilities with the need to learn new technologies.
 
@@ -41,7 +41,7 @@ As AI has become increasingly involved in software development, there have been 
 
 Insights from the McKinsey study show that there has been a significant shift in the job market. Most companies are now embracing AI, and leaders have implemented more sophisticated tools and practices that demonstrate the tremendous impact AI has on the job market. This shift is not temporary but represents a fundamental change in how software is developed and who develops it.
 
-![Future of AI in Development](/assets/imgs/b1-4.avif)
+![Future of AI in Development](/assets/bpimgs/b1-4.png)
 
 ## Solutions to reduce impact
 
@@ -57,4 +57,4 @@ As AI continues to transform software development, developers must navigate the 
 
 ---
 
-*What's your experience with AI in software development? Share your thoughts and insights in the comments below.*
+_What's your experience with AI in software development? Share your thoughts and insights in the comments below._

@@ -2,7 +2,7 @@
 title: The Indian Job Market - A Comprehensive Analysis of the Problems and Solutions
 date: 2026-02-14
 featured: false
-image: /assets/imgs/b2-1.avif
+image: /assets/bpimgs/b2-1.png
 excerpt: In the thick fabric of the India job market, the search for a fulfilling career is a journey fraught with many different challenges. From quality education to navigating skill requirements, nepotism, and the pandemic's impact, this analysis explores the obstacles faced by students and engineers.
 category: Career
 ---
@@ -11,7 +11,7 @@ category: Career
 
 In the thick fabric of the India job market, the search for a fulfilling career is a journey fraught with many different challenges. In addition to the well-known struggles of accessing quality education and navigating inconsistent skill requirements, issues such as nepotism, corruption, the changing impact of the COVID-19 pandemic, are other obstacles faced by students and engineers plays a vital role in shaping career paths for millions. This comprehensive article aims to delve into these challenges, provide nuanced insights into the problems at hand, and provide practical solutions for individuals looking to succeed in the Indian job market a competitive dynamic.
 
-![Indian Job Market](/assets/imgs/b2-1.avif)
+![Indian Job Market](/assets/bpimgs/b2-1.png)
 
 ## Lack of Quality Education in India
 
@@ -19,7 +19,7 @@ With its diverse and growing population, India faces a daunting task of providin
 
 According to the FICCI report, the current technological crisis in the world is profound and unprecedented, requiring radical changes in the educational ecosystem. The report argues that the future in education must incorporate knowledge with 21st century skills of creativity, critical thinking, communication and collaboration. It also emphasizes the importance of personalized, self-directed learning and the integration of technology and other resources into the curriculum.
 
-![Education System](/assets/imgs/b2-2.avif)
+![Education System](/assets/bpimgs/b2-2.png)
 
 ## The Mismatch of Skills and Demand in India
 
@@ -37,7 +37,7 @@ Many students face uncertainty about career paths and lack adequate guidance in 
 
 In an increasingly global job market, Indian students and engineers often face competition from their international counterparts. Enhancing global perspectives through international collaboration, exchange programs and exposure to diverse perspectives can enhance the competitiveness of Indian entrepreneurs globally.
 
-![Skills Development](/assets/imgs/b2-3.avif)
+![Skills Development](/assets/bpimgs/b2-3.png)
 
 ## Impact of Nepotism and Corruption in India
 
@@ -67,4 +67,4 @@ In conclusion, the journey to enhance job prospects in India demands a multiface
 
 ---
 
-*What challenges have you faced in the Indian job market? Share your experiences and solutions in the comments below.*
+_What challenges have you faced in the Indian job market? Share your experiences and solutions in the comments below._

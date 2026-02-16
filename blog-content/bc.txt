@@ -1,3 +1,0 @@
-
-Please copy <bc.txt> somewhere before running the script.
-

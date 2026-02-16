@@ -453,7 +453,7 @@ body.dark-mode .read-more-link::after {
   }
 
   .blog-block-1-content {
-    height: auto;
+    height: 50vh;
   }
 
   .blog-block-2-content,

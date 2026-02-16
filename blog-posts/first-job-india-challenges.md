@@ -2,7 +2,7 @@
 title: Overcoming Common Challenges in Landing Your First Job in India
 date: 2026-02-11
 featured: false
-image: /assets/imgs/b5-1.avif
+image: /assets/bpimgs/b5-1.png
 excerpt: Getting your first job is a significant milestone in any young graduate's life, but it's no secret that the journey to securing that first position can be a daunting one, especially in India. The country's job market is highly competitive, and opportunities may seem limited.
 category: Career
 ---
@@ -11,7 +11,7 @@ category: Career
 
 Getting your first job is a significant milestone in any young graduate's life, but it's no secret that the journey to securing that first position can be a daunting one, especially in India. The country's job market is highly competitive, and opportunities may seem limited. In this article, we will explore some of the common challenges that Indian youth face when seeking their first job and provide insights on how to overcome them.
 
-![Landing First Job in India](/assets/imgs/b5-1.avif)
+![Landing First Job in India](/assets/bpimgs/b5-1.png)
 
 ## Lack of Experience
 
@@ -45,4 +45,4 @@ In conclusion, while the path to your first job in India may be challenging, it'
 
 ---
 
-*Hope this article helps you to learn something. Share your job search experiences and tips in the comments below.*
+_Hope this article helps you to learn something. Share your job search experiences and tips in the comments below._
