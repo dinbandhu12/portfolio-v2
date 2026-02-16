@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* font family */
+  --font-family-1: "Inter", sans-serif;
+  --font-family-2: "Bodoni Moda", serif;
+  --font-family-3: "Playfair Display", serif;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background-color: #e8e8e8;
@@ -60,7 +67,7 @@ body {
 }
 
 .sidebar-title {
-  font-family: "Bodoni Moda", serif;
+  font-family: var(--font-family-3);
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
@@ -70,7 +77,16 @@ body {
 }
 
 .sidebar-heading {
-  font-family: "Bodoni Moda", serif;
+  font-family: var(--font-family-3);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111;
+  line-height: 1.3;
+}
+
+.sidebar-heading-aboutme {
+  font-family: var(--font-family-2);
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -144,7 +160,7 @@ body {
 }
 
 .sidebar-socialheading {
-  font-family: "Bodoni Moda", serif;
+  font-family: var(--font-family-3);
   font-size: 1.2rem;
   font-weight: 700;
   color: #111;
@@ -264,7 +280,7 @@ body {
 }
 
 .blog-post-title {
-  font-family: "Bodoni Moda", serif;
+  font-family: var(--font-family-3);
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
@@ -289,7 +305,7 @@ body {
 }
 
 .blog-post-content h1 {
-  font-family: "Bodoni Moda", serif;
+  font-family: var(--font-family-3);
   font-size: 2.2rem;
   margin: 2rem 0 1rem;
   color: #111;
@@ -298,7 +314,7 @@ body {
 }
 
 .blog-post-content h2 {
-  font-family: "Bodoni Moda", serif;
+  font-family: var(--font-family-3);
   font-size: 1.8rem;
   margin: 2rem 0 1rem;
   color: #111;
@@ -412,7 +428,7 @@ body {
 }
 
 .share-title {
-  font-family: "Bodoni Moda", serif;
+  font-family: var(--font-family-3);
   font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -838,6 +854,7 @@ body.dark-mode .blog-right-sidebar {
 
 body.dark-mode .sidebar-title,
 body.dark-mode .sidebar-heading,
+body.dark-mode .sidebar-heading-aboutme,
 body.dark-mode .sidebar-subheading {
   color: #fff;
 }
@@ -876,6 +893,10 @@ body.dark-mode .toggle-btn .box {
 
 body.dark-mode .toggle-btn .box::after {
   left: 22px;
+}
+
+body.dark-mode .blog-post-content {
+  color: #fff;
 }
 
 body.dark-mode .blog-post-title,

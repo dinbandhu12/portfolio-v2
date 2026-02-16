@@ -9,7 +9,7 @@
   /* for light mode alternate bg color - #f5f5f5 */
   --primary-color: #090909;
   --secondary-color: #2e2e2e;
-  --tertiary-color: #48494b;
+  --tertiary-color: #515254;
   --background-color: #f8f4f0;
   --hover-text-color: #f8f4f0;
   --border-color: #2f2f2f;
@@ -27,6 +27,7 @@
   /* font family */
   --font-family-1: "Inter", sans-serif;
   --font-family-2: "Bodoni Moda", serif;
+  --font-family-3: "Playfair Display", serif;
 }
 
 html {
@@ -259,7 +260,8 @@ body.dark-mode .blog-block-2-content-text .blog-block-2-featured {
 .blog-block-4-1-content-text .blog-block-4-1-heading,
 .blog-block-4-2-content-text .blog-block-4-2-heading {
   color: var(--primary-color);
-  font-size: 20px;
+  font-family: var(--font-family-3);
+  font-size: 24px;
   font-weight: 500;
   padding: 26px 10px;
   text-transform: uppercase;

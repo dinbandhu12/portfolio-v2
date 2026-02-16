@@ -33,6 +33,4 @@ To everyone else who's going through the same thing as me: we got this. It's not
 
 In a way it's perfect. Our future isn't only defined by our destination, but by everything we do along the way. So don't let anyone bring you down or tell you otherwise because they don't understand how bad we want it.
 
----
 
-_Thank you for reading. What's your journey been like? Share your story in the comments below._
