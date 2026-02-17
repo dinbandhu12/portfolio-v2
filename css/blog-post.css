@@ -799,12 +799,20 @@ body {
 }
 
 @media (max-width: 480px) {
+  body.menu-open {
+    padding-top: 416px;
+  }
+
+  .blog-post-section {
+    padding: 0.7rem;
+  }
+  
   .blog-post-title {
     font-size: 1.5rem;
   }
-
+  
   .blog-post-content {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
