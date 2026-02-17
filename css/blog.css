@@ -322,7 +322,7 @@ body.dark-mode .blog-block-3-2-para,
 body.dark-mode .blog-block-4-1-para,
 body.dark-mode .blog-block-4-2-para {
   color: var(--tertiary-color-dark);
-  /* border-color: var(--border-color-dark); */
+  border-color: var(--border-color-dark);
 }
 
 .read-more-link {
@@ -473,6 +473,7 @@ body.dark-mode .read-more-link::after {
   .blog-block-4-1-para,
   .blog-block-4-2-para {
     margin-bottom: 64px;
+    border-bottom: 1px solid var(--border-color);
   }
 
   .blog-block-4-1-content-text {
