@@ -1,5 +1,5 @@
 ---
-title: AI in Software Development - Opportunities, Challenges, and Solutions
+title: AI in Software Development Opportunities, Challenges, and Solutions
 date: 2026-02-15
 featured: true
 image: /assets/bpimgs/b1.png

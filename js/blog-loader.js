@@ -7,7 +7,8 @@ class BlogLoader {
       'indian-job-market-analysis.md',
       'india-education-global-standards.md',
       'grad-odyssey-software-engineering.md',
-      'first-job-india-challenges.md'
+      'first-job-india-challenges.md',
+      'is-software-dev-worth-it-in-2026.md'
     ];
     this.postsData = [];
   }
@@ -228,6 +229,24 @@ class BlogLoader {
         block4_2.innerHTML = `
           <h2 class="blog-block-4-2-heading">${post.title.replace(' ', ' <br> ')}</h2>
           <p class="blog-block-4-2-para">
+            ${post.excerpt}
+            <br>
+            <a href="/pages/blog-post.html?post=${post.filename}" class="read-more-link">
+              Read More
+              <i class="ri-arrow-right-long-line"></i>
+            </a>
+          </p>
+        `;
+      }
+    }
+
+    if (posts.length >= 5) {
+      const block5_1 = document.querySelector('.blog-block-5-1-content-text');
+      if (block5_1) {
+        const post = posts[4];
+        block5_1.innerHTML = `
+          <h2 class="blog-block-5-1-heading">${post.title}</h2>
+          <p class="blog-block-5-1-para">
             ${post.excerpt}
             <br>
             <a href="/pages/blog-post.html?post=${post.filename}" class="read-more-link">
